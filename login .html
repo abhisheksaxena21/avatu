@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+    .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    }
+    .form {
+    position: relative;
+    z-index: 1;
+    background: #0e0d0d;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    }
+    .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #0c0c0c;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    }
+
+    .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 87%;
+    left: 40%;
+    -ms-transform: translateY(-100%, -40%);
+    transform: translateY(-100%, -40%);
+    }
+    select {
+            outline: 0;
+            background: #f1efef;
+            background-image: none;
+            border: 1px solid black;
+        }
+     
+    .select {
+        position: relative;
+        display: block;
+        width: 15em;
+        height: 3em;
+        line-height: 3;
+        background: #2C3E50;
+        overflow: hidden;
+        border-radius: .25em;
+    }
+     
+    select {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0 0 0 .5em;
+        color: rgba(12, 12, 12, 0.418);
+        cursor: pointer;
+    }
+    body {
+    background: #f3f1f1; /* fallback for old browsers */
+    font-family: "Roboto", sans-serif;     
+    }
+</style>
+<body>
+
+<form action="/login" method="post">
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="Full Name"/>
+            <input type="text" placeholder="Email Address"/>
+            <input type="text" placeholder="Mobile Number"/>
+            <input type="text" placeholder="Enter City"/>
+            <div class='select'>
+                <select  placeholder="Enter City" required>
+                  <option value="" disabled selected hidden >--Looking for--</option>  
+                  <option value="1" >1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+            </div>
+            <div class="vertical-center">
+                <button>Apply</button>
+              </div>
+          </form>
+        </div>
+      </div>
+</form>
+
+</body>
+</html>
