@@ -142,24 +142,51 @@
     .show {
     display: block;
     }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(243, 233, 233);
+}
+
+
 </style>
 <body>
-    <div class="navbar">
-        <a>AGENCIES </a>
-        <a >FEED </a>
-        <div class="dropdown">
-        <button class="dropbtn" onclick="myTOOLS()">TOOLS
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-          <a>Dgital Markrting</a>
-          <a>Social Media Management</a>
-          <a>Web Design</a>
-          <a>Team Management</a>
-        </div>
-        </div>
-        <a >JOBS </a> 
-      </div>
+    
+    <ul>
+        <li><a >AGENCIES</a></li>
+        <li><a >FEED</a></li>
+        <li class="dropdown">
+            <button class="dropbtn" onclick="myTOOLS()">TOOLS
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a>Dgital Markrting</a>
+                <a>Social Media Management</a>
+                <a>Web Design</a>
+                <a>Team Management</a>
+            </div>
+          </li>
+        <li><a >JOBS</a></li>
+      </ul>
       <script>
         function myTOOLS() {
           document.getElementById("myDropdown").classList.toggle("show");
