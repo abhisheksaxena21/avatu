@@ -164,16 +164,36 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(243, 233, 233);
+  background-color: rgb(226, 19, 19);
 }
 
+/*table*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #7c7777;
+}
+td:hover {
+  background-color: #ff0000;
+  color: #000000;
+}
 
 </style>
 <body>
     
     <ul>
-        <li><a >AGENCIES</a></li>
-        <li><a >FEED</a></li>
+        <li><a>AGENCIES</a></li>
+        <li><a>FEED</a></li>
         <li class="dropdown">
             <button class="dropbtn" onclick="myTOOLS()">TOOLS
                 <i class="fa fa-caret-down"></i>
@@ -228,5 +248,33 @@ li a:hover:not(.active) {
       </div>
 </form>
 
+<table class="table table-striped">
+
+      <tr>
+        <th "col">#</th>
+        <th "col">First</th>
+        <th ">Last</th>
+        <th >Handle</th>
+      </tr>
+      <tr>
+        <th >1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th >2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th >3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+  
+</table>
 </body>
 </html>
